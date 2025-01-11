@@ -12,13 +12,13 @@ const Footer = () => {
           <p className="text-sm text-gray-600">
             Get daily news on upcoming offers from many suppliers all over the world
           </p>
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex flex-wrap md:justify-center gap-4 md:gap-0">
             <input
               type="email"
               placeholder="Email"
-              className="px-4 py-2 border rounded-l-md focus:outline-none"
+              className="px-4 py-2 border rounded-md md:rounded-l-md focus:outline-none "
             />
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-md md:rounded-r-md hover:bg-blue-600 mx-auto md:mx-0">
               Subscribe
             </button>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className='mx-auto md:mx-0'>
             <h4 className="text-sm font-semibold text-gray-800 mb-2">About</h4>
             <ul className="space-y-1 text-gray-600 text-sm">
               <li><a href="#">About Us</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li><a href="#">Blogs</a></li>
             </ul>
           </div>
-          <div>
+          <div className='mx-auto md:mx-0'>
             <h4 className="text-sm font-semibold text-gray-800 mb-2">Partnership</h4>
             <ul className="space-y-1 text-gray-600 text-sm">
               <li><a href="#">About Us</a></li>
@@ -69,7 +69,7 @@ const Footer = () => {
               <li><a href="#">Blogs</a></li>
             </ul>
           </div>
-          <div>
+          <div className='mx-auto md:mx-0'>
             <h4 className="text-sm font-semibold text-gray-800 mb-2">Information</h4>
             <ul className="space-y-1 text-gray-600 text-sm">
               <li><a href="#">Help Center</a></li>
@@ -78,7 +78,7 @@ const Footer = () => {
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div>
+          <div className='mx-auto md:mx-0'>
             <h4 className="text-sm font-semibold text-gray-800 mb-2">For Users</h4>
             <ul className="space-y-1 text-gray-600 text-sm">
               <li><a href="#">Login</a></li>
@@ -86,7 +86,8 @@ const Footer = () => {
               <li><a href="#">Settings</a></li>
               <li><a href="#">My Orders</a></li>
             </ul>
-            <div className="mt-4 flex space-x-4">
+          </div>
+            <div className="mt-4 flex space-x-4 text-center mx-auto items-end">
             <div style={{ marginTop: "20px" }}>
             <button
         style={{
@@ -132,7 +133,6 @@ const Footer = () => {
       </button>
       </div>
             </div>
-          </div>
         </div>
       </div>
     </footer>

@@ -2,16 +2,16 @@ import React from 'react'; // Ensure this is imported to apply Tailwind styles
 
 const Pro1 = () => {
   return (
-    <div className="flex flex-col items-center justify-center mx-auto my-8 " style={{width:'1280px', height:'257px'}}>
+    <div className="flex flex-col items-center justify-center mx-auto my-8 w-auto h-auto" >
       <div className="flex flex-col lg:flex-row  p-6 m-4">
         {/* Left Section */}
-        <div className="flex flex-col items-center justify-center  mb-6 lg:mb-0">
+        <div className="hidden md:flex flex-col items-center justify-center  mb-6 lg:mb-0">
           <div className="w-full h-48 rounded-md flex items-center justify-center relative">
             {/* Placeholder for Room Image */}
             <img 
             src="/src/bgpro1.png" 
             alt="Room" 
-            className="object-cover w-full h-full rounded-l-lg" style={{width:'295px', height:'257px'}}/>
+            className=" object-cover w-full h-full rounded-l-lg" style={{width:'295px', height:'257px'}}/>
           </div>
           <div className='absolute flex flex-col gap-3 justify-start items-start left-40 p-4 mb-16'>
             <span className='text-xl font-bold'>Home and <br /> Outdoor</span>
@@ -19,7 +19,7 @@ const Pro1 = () => {
         </div>
         
         {/* Right Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 border border-gray-300 rounded-r-lg ">
+        <div className="flex flex-wrap md:grid md:grid-cols-4 text-center rounded-r-lg align-middle items-center mx-auto ml-4">
           <div className="flex flex-col border border-gray-300 pl-3" style={{width:'224px', height:'127px'}}>
             <p className="mt-2">Soft chairs</p>
             <p className="text-sm font-thin text-gray-600" >From <br /> USD 19</p>

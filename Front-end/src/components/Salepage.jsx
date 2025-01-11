@@ -29,11 +29,11 @@ const Salepage = () => {
   });
 
   return (
-    <div className="flex  items-center justify-center bg-gra my-4 px-24 mx-auto">
-      <div className="bg-white border border-gray-300 p-6  " style={{height:'234px', width:'390px'}}>
+    <div className="flex flex-col md:flex-row items-center justify-center my-4 px-24 mx-auto">
+      <div className="bg-white md:border  md:border-gray-300 p-6 mr-12 flex flex-wrap flex-row md:flex-col " style={{height:'234px', width:'390px'}}>
         <h2 className="text-2xl font-bold  text-start px-1">Deals and Offers</h2>
         <p className="text-lg  text-start px-1">Hygiene Equipments</p>
-        <div className="flex justify-start items-start space-x-2 py-4">
+        <div className="flex  justify-start items-start space-x-2 py-4">
           <div className="flex flex-col items-center bg-gray-200 p-2 rounded">
             <span className="text-xl font-semibold">{timeLeft.days}</span>
             <span className="text-sm">Days</span>
@@ -52,7 +52,7 @@ const Salepage = () => {
           </div>
         </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div className="flex flex-col items-center justify-between border border-gray-300 p-6 aspect-h-1 aspect-w-1 w-40">
             <img src="/src/watch.png" alt="Smartwatches" className='object-cover p-2'/>
            <div className='flex flex-col align-middle items-center'> <p className="mt-2">Smart watches</p>
@@ -69,12 +69,12 @@ const Salepage = () => {
            <div className='flex flex-col align-middle items-center'> <p className="mt-2">GoPro cameras</p>
             <p className="text-red-600 text-l font-semibold  bg-red-200 rounded-2xl px-3">-40%</p></div>
           </div>
-          <div className="flex flex-col items-center justify-between border border-gray-300 p-6 aspect-w-1 aspect-h-1 w-40">
+          <div className="hidden md:flex flex-col items-center justify-between border border-gray-300 p-6 aspect-w-1 aspect-h-1 w-40">
             <img src="/src/headphone.png" alt="Headphones" className='object-cover p-2'/>
            <div className='flex flex-col align-middle items-center'> <p className="mt-2">Headphones</p>
             <p className="text-red-600 text-l font-semibold  bg-red-200 rounded-2xl px-3">-25%</p></div>
           </div>
-          <div className="flex flex-col items-center justify-between border border-gray-300 p-6 aspect-w-1 aspect-h-1 w-40">
+          <div className="hidden md:flex flex-col items-center justify-between border border-gray-300 p-6 aspect-w-1 aspect-h-1 w-40">
             <img src="/src/canon.png" alt="Canon cameras" className='object-cover p-2'/>
             <div className='flex flex-col align-middle items-center'>
             <p className="mt-2">Canon cameras</p>

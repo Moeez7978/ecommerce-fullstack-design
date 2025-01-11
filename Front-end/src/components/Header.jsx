@@ -3,6 +3,10 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const [ismob, setIsmob] = useState(false);
+  const Togglemenu=() => {
+    setIsmob(!ismob);
+  };
   const [category, setCategory] = useState('');
   const navigate = useNavigate();
   const handleSearch = () => {
@@ -12,12 +16,11 @@ const Header = () => {
    
 
 
-    <header className="flex justify-between items-center p-8 bg-white border-b border-gray-300 h-12">
-      <div className="flex items-center ml-10">
-        {/* <div className="text-2xl mr-2">\ud83d\uded2</div> */}
+    <header className="hidden md:flex justify-between items-center p-8 bg-white border-b border-gray-300 h-12 ">
+      <div className="flex items-center ">
         <img src="/src/logo-colored.png" alt="Logo picture" />
       </div>
-      <div className="flex items-center align-middle">
+      <div className="flex items-center align-middle sm:">
         <input
           type="text"
           placeholder="Search"
@@ -44,6 +47,7 @@ const Header = () => {
         <span className="text-gray-600 hover:text-blue-500 cursor-pointer">Orders</span>
         <span className="text-gray-600 hover:text-blue-500 cursor-pointer">My cart</span>
       </div>
+     
     </header>
 
 

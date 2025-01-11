@@ -6,7 +6,7 @@ const Navbar = () => {
     const [languageDropdown, setLanguageDropdown] = useState(false);
   return (
     <>
- <nav className="flex justify-between items-center p-4 bg-white border-b border-gray-300">
+ <nav className="hidden md:flex justify-between items-center p-4 bg-white border-b border-gray-300 ">
         <div className="flex items-center space-x-4">
           <span className="text-gray-600 hover:text-blue-500 cursor-pointer">&#9776; All category</span>
           <span className="text-gray-600 hover:text-blue-500 cursor-pointer">Hot offers</span>

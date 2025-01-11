@@ -8,10 +8,13 @@ import Recommend from '/src/components/Recommend'
 import Services from '/src/components/Services'
 import Supply from '/src/components/Supply'
 import Footer from '/src/components/Footer'
+import Mobheader from './Mobheader'
+import Cart from './Cart'
 function Home() {
 
   return (
     <>
+    <Mobheader />
     <Header />
     <Navbar />
     <Main />
@@ -22,6 +25,8 @@ function Home() {
     <Services/>
     <Supply/>
     <Footer/>
+    <Cart/>
+
 
     </>
   )

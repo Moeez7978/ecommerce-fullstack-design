@@ -14,9 +14,9 @@ const suppliers = [
 
 const Supply = () => {
   return (
-    <div className=" p-8 mx-auto" style={{width:'1177px', height:'138px'}}>
+    <div className="hidden md:flex flex-col p-8 mx-auto" style={{width:'1177px', height:'138px'}}>
       <h2 className="text-2xl font-bold mb-6">Suppliers by Region</h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap ">
         {suppliers.map((supplier, index) => (
           <div key={index} className=" p-4 flex justify-start align-middle items-center mb-4 gap-4" style={{width:'221px', height:'36px'}}>
             <div className="-4">
